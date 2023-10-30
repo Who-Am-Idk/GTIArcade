@@ -33,6 +33,7 @@
             playQuickDraw = new Button();
             playEmpty = new Button();
             exitButton = new Button();
+            multiPlyrTitle = new TextBox();
             menuTable.SuspendLayout();
             SuspendLayout();
             // 
@@ -98,16 +99,29 @@
             exitButton.UseVisualStyleBackColor = true;
             exitButton.Click += exitButton_Click;
             // 
+            // multiPlyrTitle
+            // 
+            multiPlyrTitle.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            multiPlyrTitle.Location = new Point(284, 69);
+            multiPlyrTitle.Name = "multiPlyrTitle";
+            multiPlyrTitle.ReadOnly = true;
+            multiPlyrTitle.Size = new Size(240, 52);
+            multiPlyrTitle.TabIndex = 2;
+            multiPlyrTitle.Text = "Multiplayer";
+            multiPlyrTitle.TextAlign = HorizontalAlignment.Center;
+            // 
             // multiPlyrMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(multiPlyrTitle);
             Controls.Add(menuTable);
             Name = "multiPlyrMenu";
             Text = "multiPlyrMenu";
             menuTable.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -117,5 +131,6 @@
         private Button playQuickDraw;
         private Button playEmpty;
         private Button exitButton;
+        private TextBox multiPlyrTitle;
     }
 }

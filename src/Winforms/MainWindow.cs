@@ -34,7 +34,7 @@ namespace GoodVibrations
             multiPlyrMenu dosPlyrMenu = new multiPlyrMenu();
             dosPlyrMenu.ShowDialog(this);
         }
-        private void optionsBtn_Click(object sender, EventArgs eventArgs)
+        private void optionsBtn_Click(object sender, EventArgs e)
         {
             OptionMenu optionMenu = new OptionMenu();
             optionMenu.ShowDialog(this);
@@ -42,6 +42,11 @@ namespace GoodVibrations
         private void backBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Game_Resize(object sender, EventArgs e)
+        {
+            menuTable_Paint(){ };
         }
     }
 }

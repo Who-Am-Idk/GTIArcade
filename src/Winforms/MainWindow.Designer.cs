@@ -91,6 +91,7 @@
             title.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
             title.Location = new Point(345, 98);
             title.Name = "title";
+            title.ReadOnly = true;
             title.Size = new Size(514, 61);
             title.TabIndex = 8;
             title.Text = "Welcome to the GTI Arcade";
@@ -126,6 +127,7 @@
             Controls.Add(title);
             Name = "Game";
             Text = "Games";
+            Resize += Game_Resize;
             menuTable.ResumeLayout(false);
             menuTable.PerformLayout();
             ResumeLayout(false);

@@ -33,6 +33,7 @@
             playComets = new Button();
             playDarts = new Button();
             exitButton = new Button();
+            singlePlyrTitle = new TextBox();
             menuTable.SuspendLayout();
             SuspendLayout();
             // 
@@ -100,16 +101,29 @@
             exitButton.UseVisualStyleBackColor = true;
             exitButton.Click += exitButton_Click;
             // 
+            // singlePlyrTitle
+            // 
+            singlePlyrTitle.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            singlePlyrTitle.Location = new Point(283, 61);
+            singlePlyrTitle.Name = "singlePlyrTitle";
+            singlePlyrTitle.ReadOnly = true;
+            singlePlyrTitle.Size = new Size(264, 52);
+            singlePlyrTitle.TabIndex = 2;
+            singlePlyrTitle.Text = "Singleplayer";
+            singlePlyrTitle.TextAlign = HorizontalAlignment.Center;
+            // 
             // singlePlyrMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(singlePlyrTitle);
             Controls.Add(menuTable);
             Name = "singlePlyrMenu";
             Text = "singlePlyrMenu";
             menuTable.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -119,5 +133,6 @@
         private Button playComets;
         private Button playDarts;
         private Button exitButton;
+        private TextBox singlePlyrTitle;
     }
 }
