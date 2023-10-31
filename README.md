@@ -1,5 +1,15 @@
 # GTIArcade
- Made in the Granite Technical Institute for programming 2 class
+ Made in the Granite Technical Institute for Programming 2 class.
+
+## Objective
+Learn how to use WinForms by challenging myself with creating a simple arcade-style application with a few classic arcade games.
+
+## Features
+(Hopefully)
+
+* 4 Single-player games.
+* 2 Multi-player games.
+* Saving and loading of a "Highscores" txt file.
 
 ## Graphic
 
